@@ -17,10 +17,8 @@ function App() {
 
   useEffect(() => {
     const fetchData = async (): Promise<void> => {
-      console.log('Fetching data...');
       try {
         const response = await fetch('https://fakerapi.it/api/v1/images?_width=380');
-        console.log(response);
         const { data }: ApiResponse = await response.json();
         setInfo(data);
       } catch (error: unknown) {
