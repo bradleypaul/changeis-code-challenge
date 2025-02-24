@@ -9,9 +9,9 @@ interface ImageProps {
 const Image: React.FC<ImageProps> = ({ title, url, description }) => {
   return (
     <>
-      <h4>{title}</h4>
+      <h2>{title}</h2>
       <img src={url} alt={title} />
-      <h5>{description}</h5>
+      <h3>{description}</h3>
     </>
   );
 };
